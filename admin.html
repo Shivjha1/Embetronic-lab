@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin | Embetronic Lab 2026</title><link rel="stylesheet" href="/styles.css"></head>
+<body class="admin-body">
+<div id="loginView" class="login">
+  <form id="loginForm" class="login-card card">
+    <div class="eyebrow" style="color:#0c4da2">ECE DEPARTMENT • 2026</div>
+    <h1>Admin Dashboard</h1>
+    <p>Private access for the Embetronic Lab team. Enter the admin password to view student applications.</p>
+    <label>Admin Password<input id="password" type="password" required placeholder="Enter password"></label>
+    <button class="primary" style="width:100%;margin-top:14px">Login</button>
+    <div id="loginMsg" class="message"></div>
+  </form>
+</div>
+<div id="dashboard" class="admin-wrap hidden">
+  <div class="admin-top">
+    <div><h1>Embetronic Lab 2026</h1><p>CMR Engineering College • ECE Department • Applications</p></div>
+    <div class="toolbar"><a class="secondary" href="/" style="text-decoration:none">Open Form</a><a class="secondary" href="/api/admin/export.csv">Export CSV</a><button id="logout" class="secondary">Logout</button></div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b id="total">0</b><span>Total applications</span></div>
+    <div class="stat"><b id="newCount">0</b><span>New</span></div>
+    <div class="stat"><b id="teamCount">0</b><span>Team applications</span></div>
+    <div class="stat"><b id="shortCount">0</b><span>Shortlisted</span></div>
+  </div>
+  <div class="table-card">
+    <div class="filters"><input id="search" placeholder="Search name, roll, project, email…"><select id="statusFilter"><option value="">All status</option><option>New</option><option>Reviewed</option><option>Shortlisted</option><option>Rejected</option></select><button id="refresh" class="secondary">↻ Refresh</button></div>
+    <table class="table"><thead><tr><th>Application</th><th>Student / Team</th><th>Project</th><th>Contact</th><th>Status</th><th>Action</th></tr></thead><tbody id="tbody"></tbody></table>
+  </div>
+</div>
+<div id="modal" class="modal"><div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Application</h2><button id="closeModal" class="secondary">Close</button></div><div id="modalBody"></div></div></div>
+<script src="/admin.js"></script>
+</body>
+</html>

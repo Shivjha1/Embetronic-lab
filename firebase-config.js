@@ -9,4 +9,4 @@ window.FIREBASE_CONFIG = {
 };
 
 // We'll add your admin email after Firebase Authentication is configured.
-window.EMBETRONIC_ADMIN_EMAIL = "PASTE_ADMIN_EMAIL";
+window.EMBETRONIC_ADMIN_EMAIL = "shivakumarjha7569@gmail.com";

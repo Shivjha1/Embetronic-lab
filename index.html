@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Embetronic Club 2026 | CMR Engineering College ECE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <aside class="visual-panel">
+    <img src="cmr.png" alt="CMR Engineering College">
+    <div class="visual-shade"></div>
+    <div class="visual-copy">
+      <div class="chip">ECE</div>
+      <p>CMR ENGINEERING COLLEGE</p>
+      <h2>EMBETRONIC<br><span>CLUB</span> 2026</h2>
+      <div class="line"></div>
+      <strong>ECE DEPARTMENT</strong>
+      <small>INNOVATE • BUILD • EMPOWER</small>
+    </div>
+  </aside>
+
+  <section class="form-panel">
+    <header>
+      <div class="brand">
+        <div class="logo">CMR</div>
+        <div><strong>CMR ENGINEERING COLLEGE</strong><span>ECE DEPARTMENT</span></div>
+      </div>
+      <h1>EMBETRONIC <em>CLUB</em> 2026</h1>
+      <p class="subtitle">Student Club Registration Form</p>
+      <p class="tagline"><b>ECE Only</b> &nbsp;|&nbsp; Individual &amp; Team</p>
+    </header>
+
+    <div class="progress"><span>SECTION 1 OF 3</span><b>01</b></div>
+
+    <form id="applicationForm">
+      <section class="section">
+        <h2>Application Type <sup>*</sup></h2>
+        <p class="hint">Choose how you are applying.</p>
+        <div class="choices">
+          <label class="choice active"><input type="radio" name="type" value="Individual" checked><span class="radio"></span><div><b>Individual Member</b><small>I'm applying alone.</small></div></label>
+          <label class="choice"><input type="radio" name="type" value="Team"><span class="radio"></span><div><b>Team</b><small>I'm applying with teammates.</small></div></label>
+        </div>
+
+        <label>Student / Team Leader Name <sup>*</sup></label>
+        <input id="name" required placeholder="Full name">
+
+        <div class="grid2">
+          <div><label>Roll Number <sup>*</sup></label><input id="roll" required placeholder="ECE roll number"></div>
+          <div><label>Year <sup>*</sup></label><select id="year" required><option value="">Select year</option><option>1st Year</option><option>2nd Year</option><option>3rd Year</option><option>4th Year</option></select></div>
+        </div>
+        <div class="grid2">
+          <div><label>Section <sup>*</sup></label><input id="section" required placeholder="e.g. A"></div>
+          <div><label>Mobile Number <sup>*</sup></label><input id="phone" required inputmode="numeric" placeholder="10-digit number"></div>
+        </div>
+        <label>Email ID <sup>*</sup></label>
+        <input id="email" type="email" required placeholder="student@college.edu">
+
+        <div id="teamBox" class="team-box hidden">
+          <div class="team-head"><h3>Team Members</h3><button type="button" id="addMember">+ Add member</button></div>
+          <p class="hint">Add the students who are applying with you.</p>
+          <div id="members"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Club Interest</h2>
+        <p class="hint">Tell us what you want to explore in Embetronic Club.</p>
+        <label>Primary Interest <sup>*</sup></label>
+        <select id="interest" required>
+          <option value="">Select an area</option>
+          <option>Embedded Systems</option><option>IoT & Smart Systems</option><option>Robotics</option>
+          <option>VLSI / FPGA</option><option>PCB & Hardware Design</option><option>Communication Systems</option>
+          <option>AI + Electronics</option><option>Other</option>
+        </select>
+        <label>Why do you want to join?</label>
+        <textarea id="reason" placeholder="Briefly describe your interests or what you want to learn..."></textarea>
+      </section>
+
+      <section class="section">
+        <h2>Confirmation</h2>
+        <label class="check"><input id="agree" type="checkbox" required><span>I confirm that I am an ECE student and the information provided is correct.</span></label>
+        <button class="submit" type="submit">Submit Application <span>→</span></button>
+        <p class="privacy">🔒 Your application details are intended for the ECE department club coordination team.</p>
+      </section>
+    </form>
+
+    <div id="success" class="success hidden"></div>
+  </section>
+
+</div>
+
+<script src="firebase-config.js"></script>
+<script type="module" src="script.js"></script>
+<footer class="site-footer"><span>Embetronic Club 2026 • ECE Department</span><a href="admin.html">Admin</a></footer>
+</body>
+</html>

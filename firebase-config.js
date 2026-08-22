@@ -1,17 +1,12 @@
-// Firebase Web App configuration.
-// 1) Create a Firebase project.
-// 2) Add a Web App.
-// 3) Copy its config values below.
-// Firebase Web configuration is normally safe to expose in a static website;
-// access to student records is protected by Firestore Security Rules.
 window.FIREBASE_CONFIG = {
-  apiKey: "PASTE_API_KEY",
-  authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
-  projectId: "PASTE_PROJECT_ID",
-  storageBucket: "PASTE_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "PASTE_MESSAGING_SENDER_ID",
-  appId: "PASTE_APP_ID"
+  apiKey: "AIzaSyA8TKCdW3oz3ScYOhLCSAyCjnenpSSDeVE",
+  authDomain: "embetronic-club-2026-3267b.firebaseapp.com",
+  projectId: "embetronic-club-2026-3267b",
+  storageBucket: "embetronic-club-2026-3267b.firebasestorage.app",
+  messagingSenderId: "137852316534",
+  appId: "1:137852316534:web:ce63f02e94edab50e1a857",
+  measurementId: "G-LNLZKVB6J7"
 };
 
-// Exact email of the Firebase Authentication admin user.
+// We'll add your admin email after Firebase Authentication is configured.
 window.EMBETRONIC_ADMIN_EMAIL = "PASTE_ADMIN_EMAIL";
